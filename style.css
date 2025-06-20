@@ -90,12 +90,15 @@ header {
   font-size: 36px;
   color: var(--primarycolor);
   font-weight: bold;
+  margin-right: 100px;
 }
 
 #navbar span {
   color: var(--ligthcolor);
 }
-
+#navbar img{
+  width: 150px;
+}
 nav ul {
   display: flex;
   gap: 10px;
@@ -284,7 +287,9 @@ header .content p {
   font-size: 20px;
   border-radius: 50%;
 }
-
+.contact-info .ho {
+ size: 60px;
+}
 #contact .contact-info a i:hover {
   background-color: #e4b95b;
   color: #383848;

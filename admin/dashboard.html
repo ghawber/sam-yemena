@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>لوحة تحكم سام اليمن</h1>
+        <button onclick="logout()">تسجيل الخروج</button>
+    </nav>
+
+    <main class="dashboard">
+        <section>
+            <h2>📝 محتوى الموقع</h2>
+            <textarea id="aboutText" rows="4" placeholder="نص قسم من نحن..."></textarea>
+        </section>
+
+        <section>
+            <h2>🎨 إعدادات الواجهة</h2>
+            <label>لون رئيسي: <input type="color" id="mainColor" value="#ff274b"></label><br>
+            <label>عنوان الموقع: <input type="text" id="siteTitle" value="شركة سام اليمن للبرمجيات"></label>
+        </section>
+
+        <section>
+            <h2>🔗 روابط التواصل</h2>
+            <label>رابط فيسبوك: <input type="text" id="facebookLink"></label><br>
+            <label>رابط واتساب: <input type="text" id="whatsappLink"></label>
+        </section>
+
+        <button onclick="saveData()">💾 حفظ التعديلات</button>
+
+        <pre id="output"></pre>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -90,22 +90,34 @@ header {
   font-size: 36px;
   color: var(--primarycolor);
   font-weight: bold;
+  margin-right: 100px;
 }
 
 #navbar span {
   color: var(--ligthcolor);
 }
-
+#navbar img{
+  width: 150px;
+}
 nav ul {
   display: flex;
   gap: 10px;
 }
 
 nav ul li a {
+    display: inline-block;
+      width: 150px; /* أو حجم مناسب ثابت */
+        height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+      border: 2px solid transparent;
+      justify-content: center;
+        align-items: center;
   font-size: 18px;
   font-weight: bold;
   background: var(--primarycolor);
-  padding: 10px 20px;
+  padding: 0px 20px;
   border-radius: 25px;
   transition: 0.3s;
 }
@@ -284,7 +296,9 @@ header .content p {
   font-size: 20px;
   border-radius: 50%;
 }
-
+.contact-info .ho {
+ size: 60px;
+}
 #contact .contact-info a i:hover {
   background-color: #e4b95b;
   color: #383848;
@@ -293,27 +307,6 @@ header .content p {
 form {
   width: 50%;
 }
-
-form input,
-textarea {
-  display: block;
-  width: 100%;
-  padding: 20px 15px;
-  margin: 20px 0;
-  border: none;
-  background-color: #e3e2dd;
-}
-
-form input:focus,
-textarea:focus {
-  outline: none;
-}
-
-form button {
-  color: #fff;
-}
-
-
 
 /* Footer */
 #footer {
